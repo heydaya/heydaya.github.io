@@ -1,0 +1,5 @@
+Sitemap: https://heydaya.github.io/sitemap.xml
+
+User-Agent: *
+Allow: /
+
