@@ -187,8 +187,376 @@ section.links-section.sticky-nav ul.site-links>li>a {
     font-size: 20px;
 }
 
+.about-section-svg {
+    text-align: center;
+}
+
+/*About Section SVG Animation CSS*/
+#bot {
+    transition: 0.5s all ease;
+    transform: translate(0px, 3px) rotate(3deg);
+    transform-origin: bottom;
+}
+
+svg {
+    cursor: pointer;
+}
+
+svg:hover #bot {
+    transform: translate(-17px, 2px) rotate(3deg);
+
+
+}
+
+#bot_head_l1,
+#bot_head_l2,
+#bot_head_R1,
+#bot_head_R2 {
+    transition: 0.3s all ease;
+}
+
+svg:hover #bot_head_l1 {
+    transform: translateX(-3px);
+    animation: bot-head-blink 0.6s both;
+}
+
+svg:hover #bot_head_l2 {
+    transform: translateX(-3px);
+    animation: bot-head-blink 0.6s both;
+}
+
+svg:hover #bot_head_R1 {
+    transform: translateX(3px);
+    animation: bot-head-blink 0.6s both;
+}
+
+svg:hover #bot_head_R2 {
+    transform: translateX(3px);
+    animation: bot-head-blink 0.6s both;
+}
+
+svg:hover #bot_headlight {
+    animation: bot-head-blink 0.6s both;
+}
+
+@keyframes bot-head-blink {
+
+    0%,
+    50%,
+    100% {
+        fill: #4CF58C;
+    }
+
+    25%,
+    75% {
+        fill: #F7B000;
+    }
+}
+
+
+#left-eye,
+#right-eye {
+    animation: blink 3s cubic-bezier(0.01, 0.6, 1, 0.43) infinite;
+    transform-origin: center;
+
+}
+
+#code-text {
+    animation: blink 3s cubic-bezier(0.01, 0.6, 1, 0.43) 2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    5% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#code_l1,
+#code_l2,
+#code_l3,
+#code_l4,
+#code_l5,
+#code_l6,
+#code_l7,
+#code_l8,
+#code_l9,
+#code_l10,
+#code_l11,
+#code_l12,
+#code_l13,
+#code_l14,
+#code_l15,
+#code_l16 {
+    animation: lineWidthAnimation 3s cubic-bezier(0.65, 0.05, 0.36, 1) infinite alternate forwards;
+
+}
+
+#code_l1 {
+    animation-delay: 2.1s
+}
+
+#code_l2 {
+    animation-delay: 2.2s
+}
+
+#code_l3 {
+    animation-delay: 2.3s
+}
+
+#code_l4 {
+    animation-delay: 2.4s
+}
+
+#code_l5 {
+    animation-delay: 2.5s
+}
+
+#code_l6 {
+    animation-delay: 2.6s
+}
+
+#code_l7 {
+    animation-delay: 2.7s
+}
+
+#code_l8 {
+    animation-delay: 2.8s
+}
+
+#code_l9 {
+    animation-delay: 2.9s
+}
+
+#code_l10 {
+    animation-delay: 2.10s
+}
+
+#code_l11 {
+    animation-delay: 3.1s
+}
+
+#code_l12 {
+    animation-delay: 3.2s
+}
+
+#code_l13 {
+    animation-delay: 3.3s
+}
+
+#code_l14 {
+    animation-delay: 3.4s
+}
+
+#code_l15 {
+    animation-delay: 3.5s
+}
+
+#code_l16 {
+    animation-delay: 3.6s
+}
+
+
+#code_R1,
+#code_R2,
+#code_R3,
+#code_R4,
+#code_R5,
+#code_R6,
+#code_R7,
+#code_R8,
+#code_R9,
+#code_R10,
+#code_R11 {
+    animation: lineWidthAnimation 3s cubic-bezier(0.65, 0.05, 0.36, 1) infinite alternate forwards;
+
+}
+
+
+
+#code_R1 {
+    animation-delay: 1.1s
+}
+
+#code_R2 {
+    animation-delay: 1.2s
+}
+
+#code_R3 {
+    animation-delay: 1.3s
+}
+
+#code_R4 {
+    animation-delay: 1.4s
+}
+
+#code_R5 {
+    animation-delay: 1.5s
+}
+
+#code_R6 {
+    animation-delay: 1.6s
+}
+
+#code_R7 {
+    animation-delay: 1.7s
+}
+
+#code_R8 {
+    animation-delay: 1.8s
+}
+
+#code_R9 {
+    animation-delay: 1.9s
+}
+
+#code_R10 {
+    animation-delay: 1.10s
+}
+
+#code_R11 {
+    animation-delay: 2.1s
+}
+
+
+
+#code_b1,
+#code_b2,
+#code_b3,
+#code_b4,
+#code_b5,
+#code_b6,
+#code_b7,
+#code_b8,
+#code_b9,
+#code_b10,
+#code_b11,
+#code_b12,
+#code_b13,
+#code_b14,
+#code_b15,
+#code_b16,
+#code_b17,
+#code_b18 {
+    animation: lineWidthAnimation 3s cubic-bezier(0.65, 0.05, 0.36, 1) infinite alternate forwards;
+
+}
+
+#code_b1 {
+    animation-delay: 6.1s
+}
+
+#code_b2 {
+    animation-delay: 6.2s
+}
+
+#code_b3 {
+    animation-delay: 6.3s
+}
+
+#code_b4 {
+    animation-delay: 6.4s
+}
+
+#code_b5 {
+    animation-delay: 6.5s
+}
+
+#code_b6 {
+    animation-delay: 6.6s
+}
+
+#code_b7 {
+    animation-delay: 6.7s
+}
+
+#code_b8 {
+    animation-delay: 6.8s
+}
+
+#code_b9 {
+    animation-delay: 6.9s
+}
+
+#code_b10 {
+    animation-delay: 6.10s
+}
+
+#code_b11 {
+    animation-delay: 7.1s
+}
+
+#code_b12 {
+    animation-delay: 7.2s
+}
+
+#code_b13 {
+    animation-delay: 7.3s
+}
+
+#code_b14 {
+    animation-delay: 7.4s
+}
+
+#code_b15 {
+    animation-delay: 7.5s
+}
+
+#code_b16 {
+    animation-delay: 7.6s
+}
+
+#code_b17 {
+    animation-delay: 7.7s
+}
+
+#code_b18 {
+    animation-delay: 7.8s
+}
+
+
+
+
+@keyframes lineWidthAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*About Section SVG Animation CSS*/
+
+
+
+
 .sticky-nav+#about-section {
-    padding-top: 8em;
+    padding-top: 10em;
 }
 
 h2.section-heading {
@@ -350,9 +718,11 @@ footer {
     h2.section-heading {
         font-size: 30px;
     }
+
     p.section-subtitle {
         line-height: normal;
     }
+
     .hero-content .sub-heading {
         font-size: 4rem;
     }
@@ -380,7 +750,7 @@ footer {
     section.links-section.sticky-nav ul.site-links>li>a {
         font-size: 16px;
     }
+    .about-section-svg > svg {
+        width: 330px;
+    }
 }
-
-
-
