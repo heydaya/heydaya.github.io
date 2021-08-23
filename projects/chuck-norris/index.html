@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="icon" href="https://assets.chucknorris.host/img/avatar/chuck-norris.png" type="image/png">
+      <title>Chuck Norris Facts</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body class="d-flex align-items-center">
+      <div class="wrapper">
+         <div class="main-wrapper">
+          <div class="bird d-none d-sm-block">
+              <marquee scrollamount="8" direction="right"><img src="images/bird.gif" class="img-fluid" width="60"></marquee>
+          </div>
+            <div class="boat d-none d-sm-block">
+               <marquee scrollamount="5" direction="right"><img src="images/boat.png" class="img-fluid"></marquee>
+            </div>
+            <div class="clouds-top">
+               <marquee scrollamount="3" direction="left" scrolldelay="0"><img src="images/cloud-1.png" class="img-fluid"></marquee>
+            </div>
+            <div class="clouds-mid">
+               <marquee scrollamount="2" direction="left" scrolldelay="0"><img src="images/cloud-2.png" class="img-fluid"></marquee>
+            </div>
+            <div class="main-elemtents d-none d-sm-block">
+               <img src="images/front-elements.png" class="img-fluid"  width="100%">
+            </div>
+         </div>
+      </div>
+      <div class="container mb-5">
+         <div class="row justify-content-center">
+         </div>
+         <div class="row">
+            <div class="col-md-7 text-center">
+               <div class="h1 page-heading font-weight-bold">Chuck Norris facts</div>
+            </div>
+         </div>
+         <div class="row">
+            <div class=" joke-wrapper col-md-7 text-center text-info mb-3 py-5">
+               <img class="img-fluid my-4 chuckImg" width="80" src="/images/dancing-happy.gif">
+               <p class="h3 font-weight-bold chuckJoke d-flex justify-content-center align-items-center">
+                  <span class="jokePlaceholder">&nbsp;</span>
+               </p>
+               <button type="button" class="btn btn-lg btn-success my-4 updateJoke">Another one 👍</button>
+            </div>
+            <div class="col-md-2 d-none d-sm-block">
+               <div class="category_select_wrapper">
+                  <div class="category_select">
+                     <div class="form-group text-center">
+                        <select class="form-control" id="jokesCategorySelect">
+                           <option disabled="disabled" selected="selected">Category</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer">
+         <div class="container"><strong>&lt;/&gt;</strong> with ❤ by <a href="https://heydaya.github.io/" target="_blank" title="https://heydaya.github.io/">Daya Shankar</a> | Images from <a href='https://www.freepik.com/vectors/background' target="_blank">freepik.com</a> | <a href="https://api.chucknorris.io/" target="_blank">API</a>
+         </div>
+      </footer>
+      <script src="main.js" type="text/javascript"></script>
+   </body>
+</html>
