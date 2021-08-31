@@ -178,7 +178,7 @@ const checkAQI = (aqiLevel) => {
 
 // Get Air Qualitiy Data from API
 const getAQI = (latitude, longitude) => {
-  let api = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${latitude}&lon=${longitude}&appid=${key}`;
+  let api = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${latitude}&lon=${longitude}&appid=${key}`;
 
   fetch(api)
     .then((response) => {
@@ -245,7 +245,7 @@ formInput.addEventListener("submit", () => {
   city = citynameInput.value;
   event.preventDefault();
 
-  let api = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${key}`;
+  let api = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${key}`;
 
   fetch(api)
     .then((response) => {
