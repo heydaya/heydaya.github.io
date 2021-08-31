@@ -1,0 +1,273 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  color: #333;
+  background-color: #d6d7db;
+}
+
+.main-wrapper {
+  width: 1150px;
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  /* padding: 30px; */
+  margin: auto;
+  box-shadow: 0 1.5rem 2rem 15px rgb(0 0 0 / 15%);
+  overflow: hidden;
+}
+.weather-details {
+  margin-bottom: 2rem;
+}
+.temperature {
+  font-weight: 400;
+}
+.temperature sup {
+  font-size: 2.5rem;
+  top: -0.8em;
+}
+.day-info {
+  font-size: 1.2rem;
+}
+.day-info .day {
+  font-weight: 600;
+}
+span.time {
+  color: #777;
+}
+.description {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.rain {
+  font-weight: 600;
+}
+.city-details {
+  margin-top: 1.5rem;
+}
+.city-details .city-name {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.city-details .country-name {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #777;
+  font-weight: 600;
+}
+
+.content-wrapper-left,
+.content-wrapper-right {
+  padding: 25px;
+}
+
+.content-wrapper-right {
+  background-color: rgb(241 241 241);
+  /* border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px; */
+}
+.seven-day-forecast {
+  min-height: 172px;
+}
+.weekday-details {
+  /* box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%); */
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 15px;
+}
+
+.weekday-details .weekday {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.weekday-details img {
+  padding: 10px 0;
+}
+.temp-details .high {
+  font-weight: 700;
+}
+
+.temp-details .low {
+  color: #777;
+}
+
+.section-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+.section-heading::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  bottom: 0;
+  left: 0;
+  background: rgb(0 0 0 / 70%);
+}
+
+.card-details {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px 20px;
+  min-height: 100px;
+}
+.card-heading {
+  color: #a0a0a0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card-data {
+  font-size: 2.3rem;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.today-details .sunrise,
+.today-details .sunset {
+  margin: 0;
+}
+
+.today-details .sunrise img,
+.today-details .sunset img {
+  margin-right: 10px;
+}
+
+.today-details .sunrise span,
+.today-details .sunset span {
+  font-weight: 500;
+}
+
+.wind-details .card-data sub {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.humidity-details .card-data sup {
+  position: relative;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.visibility-details .card-data sub {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.humidity-details .desc,
+.visibility-details .desc,
+.air-details .desc {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.city-search ::placeholder {
+  font-weight: 600;
+}
+
+.city-search.input-group-sm > .btn,
+.city-search.input-group-sm > .form-control,
+.city-search.input-group-sm > .form-select,
+.city-search.input-group-sm > .input-group-text {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 15px;
+}
+.city-search.input-group-sm > .form-control {
+  border-left: 0;
+  padding-left: 0.3rem;
+}
+.city-search .input-group-text {
+  background-color: #fff;
+}
+
+.city-search .form-control:focus,
+.city-search .locate-me-btn:focus,
+.city-search .locate-me-btn:hover {
+  background-color: #fff;
+  border-color: #ced4da;
+  box-shadow: none;
+  color: #6c757d;
+}
+
+.city-search .locate-me-btn {
+  color: #6c757d;
+  border-color: #ced4da;
+}
+
+.alert-wrapper {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.alert-wrapper .alert {
+  margin-bottom: 0;
+  width: 300px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  position: relative;
+  border-width: 5px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  color: #333;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 0.8rem;
+  background-color: #f1f1f1;
+  border-top: 1px solid rgb(119 119 119 / 43%);
+}
+.footer a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #56a0ee;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  html,
+  body {
+    height: auto;
+  }
+  body {
+    margin: 15px;
+  }
+  .content-wrapper-left,
+  .content-wrapper-right {
+    padding: 25px;
+    text-align: center;
+  }
+  .temperature sup {
+    font-size: 1.5rem;
+    top: -0.8em;
+}
+.section-heading::after {  
+  left: 50%;
+  margin-left: -25px;
+}
+.seven-day-forecast > .col  {
+  margin-bottom: 8px;
+}
+.card-details {
+  margin-bottom: 10px;
+}
+}

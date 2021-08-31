@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Weather App - V1.0</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Alert Wrapper -->
+    <div class="alert-wrapper"></div>
+    <!-- Content Wrapper -->
+    <div class="main-wrapper container">
+      <div class="row">
+        <div class="col-md-3 content-wrapper-left">
+          <form id="form">
+            <div class="input-group input-group-sm city-search mb-3">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="bi bi-search"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control"
+                id="cityName"
+                placeholder="Search for places..."
+                autocomplete="off"
+              />
+              <button
+                class="btn btn-outline-secondary locate-me-btn"
+                title="Location"
+                type="button"
+                id="button-addon1"
+              >
+                <i class="bi bi-geo-alt-fill"></i>
+              </button>
+            </div>
+          </form>
+          <img
+            src="icons/01d.svg"
+            alt="sun"
+            class="main_temp_img img-fluid"
+            width="200"
+          />
+          <div class="weather-details">
+            <p class="display-2 temperature">00<sup>°C</sup></p>
+            <p class="day-info">
+              <span class="day">Day</span>, <span class="time">00:00 AM</span>
+            </p>
+          </div>
+          <p class="description">
+            <img src="icons/04d.svg" alt="overcast" width="30" />
+            <span class="align-middle">Description</span>
+          </p>
+          <p class="rain">
+            <img src="icons/wind.svg" alt="wind" width="30" />
+            <span class="align-middle">Wind - 00°</span>
+          </p>
+
+          <div class="city-details">
+            <p class="city-name">City</p>
+            <p class="country-name">Country</p>
+          </div>
+        </div>
+        <div class="col-md-9 content-wrapper-right">
+          <div class="container gx-0">
+            <h5 class="section-heading">7 Day Forecast</h5>
+            <div class="row seven-day-forecast gx-2 mb-4">
+              <div class="col">
+                <div class="weekday-details">
+                  <div class="weekday">Sun</div>
+                  <img src="icons/01d.svg" alt="clear-day" width="60" />
+                  <div class="temp-details">
+                    <span class="high">00°</span> <span class="low">00°</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="weekday-details">
+                  <div class="weekday">Mon</div>
+                  <img src="icons/01d.svg" alt="clear-day" width="60" />
+                  <div class="temp-details">
+                    <span class="high">00°</span> <span class="low">00°</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="weekday-details">
+                  <div class="weekday">Tue</div>
+                  <img src="icons/01d.svg" alt="clear-day" width="60" />
+                  <div class="temp-details">
+                    <span class="high">00°</span> <span class="low">00°</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="weekday-details">
+                  <div class="weekday">Wed</div>
+                  <img src="icons/01d.svg" alt="clear-day" width="60" />
+                  <div class="temp-details">
+                    <span class="high">00°</span> <span class="low">00°</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="weekday-details">
+                  <div class="weekday">Thu</div>
+                  <img src="icons/01d.svg" alt="clear-day" width="60" />
+                  <div class="temp-details">
+                    <span class="high">00°</span> <span class="low">00°</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="weekday-details">
+                  <div class="weekday">Fri</div>
+                  <img src="icons/01d.svg" alt="clear-day" width="60" />
+                  <div class="temp-details">
+                    <span class="high">00°</span> <span class="low">00°</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="weekday-details">
+                  <div class="weekday">Sat</div>
+                  <img src="icons/01d.svg" alt="clear-day" width="60" />
+                  <div class="temp-details">
+                    <span class="high">00°</span> <span class="low">00°</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h5 class="section-heading">Today's Highlights</h5>
+            <div class="row gx-3 mb-3">
+              <div class="col">
+                <div class="uv-details card-details">
+                  <h5 class="card-heading">UV Index</h5>
+                  <p class="card-data">00</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="wind-details card-details">
+                  <h5 class="card-heading">Wind Status</h5>
+                  <p class="card-data">00 <sub>km/h</sub></p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="today-details card-details">
+                  <h5 class="card-heading">Sunrise & Sunsets</h5>
+                  <!-- <p class="card-data">7.5</p> -->
+                  <p class="sunrise">
+                    <img
+                      src="icons/sunrise.svg"
+                      alt="sunrise"
+                      width="30"
+                    /><span class="align-middle">0.00 AM</span>
+                  </p>
+                  <p class="sunset">
+                    <img src="icons/sunset.svg" alt="sunset" width="30" /><span
+                      class="align-middle"
+                      >0.00 PM</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row gx-3">
+              <div class="col">
+                <div class="humidity-details card-details">
+                  <h5 class="card-heading">Humidity</h5>
+                  <p class="card-data">00 <sup>%</sup></p>
+                  <p class="desc">
+                    <span class="align-middle">Normal</span
+                    ><img src="icons/aqiLevel/Good.gif" alt="good" width="25" />
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="visibility-details card-details">
+                  <h5 class="card-heading">Visibility</h5>
+                  <p class="card-data">00 <sub>km</sub></p>
+                  <p class="desc">Average</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="air-details card-details">
+                  <h5 class="card-heading">Air Quality</h5>
+                  <p class="card-data">00</p>
+                  <p class="desc">Unhealthy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <strong>&lt;/&gt;</strong> with ❤ by
+            <a
+              href="https://heydaya.github.io/"
+              target="_blank"
+              title="https://heydaya.github.io/"
+              >Daya Shankar</a
+            >
+            | Design from
+            <a
+              href="https://dribbble.com/shots/10460680-Weather-App"
+              target="_blank"
+              >Dribbble</a
+            >
+            | Icons from
+            <a
+              href="https://www.amcharts.com/free-animated-svg-weather-icons/"
+              target="_blank"
+              >AMCHARTS</a
+            >
+            |
+            <a href="https://openweathermap.org/api" target="_blank"
+              >OpenWeather API</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
