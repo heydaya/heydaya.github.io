@@ -167,6 +167,10 @@ button.replay:active {
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+  body {
+    min-height: 100vh;
+    height: 100%;
+}
   .game-wrapper {
     margin: 1rem auto;
     padding: 15px;
