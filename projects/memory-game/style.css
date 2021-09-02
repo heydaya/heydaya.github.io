@@ -21,7 +21,7 @@ body {
 }
 
 .points-wrapper {
-  width: 600px;
+  width: 37.5em;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2.5rem;
@@ -44,8 +44,8 @@ body {
   display: flex;
   margin: auto;
   flex-wrap: wrap;
-  width: 600px;
-  height: 500px;
+  width: 37.5em;
+  height: 31.25em;
   border: 5px solid #42ab87;
   border-radius: 10px;
   perspective: 1000px;
