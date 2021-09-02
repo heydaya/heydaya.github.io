@@ -1,11 +1,13 @@
 const cardsElement = document.querySelectorAll(".card-wrapper");
 const gameScoreElement = document.querySelector(".score span");
 const gameStepsElement = document.querySelector(".steps span");
+const welcomeDivElement = document.querySelector(".welcome-wrapper");
 const winnerDivElement = document.querySelector(".winner-wrapper");
 const loserDivElement = document.querySelector(".loser-wrapper");
+const playButtonElement = document.querySelector(".play");
 const replayButtonElement = document.querySelectorAll(".replay");
 
-console.log(replayButtonElement[0]);
+// console.log(replayButtonElement[0]);
 // Variables
 let hasCardFlipped = false;
 let lockBoard = false;
@@ -109,9 +111,17 @@ function stepsCheck() {
   }
 }
 
+// Play Button
+playButtonElement.addEventListener("click", function() {
+  // Game Start Effect
+  var gameStart = new Audio("sounds/start.mp3");
+  gameStart.play();
+  welcomeDivElement.style.display = "none";
+})
+
 // Replay Button
 replayButtonElement.forEach((button)=> {
-  button.addEventListener("click", function () {
+  button.addEventListener("click", function() {
     winnerDivElement.style.display = "none";
     loserDivElement.style.display = "none";
     cardsElement.forEach((card) => {
