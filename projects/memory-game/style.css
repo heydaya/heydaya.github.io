@@ -167,10 +167,6 @@ button.replay:active {
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  body {
-    /* display: flex; */
-    /* height: 100%; */
-  }
   .game-wrapper {
     margin: 1rem auto;
     padding: 15px;
@@ -193,11 +189,48 @@ button.replay:active {
   .points-wrapper {
     margin-bottom: 1rem;
     flex-direction: column;
-}
+  }
 
-  .score, .steps {
+  .score,
+  .steps {
     font-size: 1.3rem;
     margin: 5px;
     padding: 5px 20px;
+  }
+
+  .winContainer,
+  .lossContainer {
+    position: relative;
+    width: 300px;
+    background: #15871a;
+    text-align: center;
+    border: 10px solid #e8ff00;
+    padding: 20px;
+    margin: auto;
+    animation: slideUp 0.5s;
+  }
+  .winText,
+  .lossText {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e8ff00;
+  }
+  .winText > img,
+  .lossText > img {
+    width: 70px;
+    margin-bottom: 1rem;
+  }
+  button.replay {
+    cursor: pointer;
+    background: #e8ff00;
+    padding: 10px 35px;
+    margin: 30px auto;
+    outline: 0;
+    border: 0;
+    color: #15871a;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 30px;
+    transform: scale(1);
   }
 }
