@@ -1,7 +1,10 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
+
 html,
 body {
   height: 100%;
+  font-family: "Quicksand", sans-serif;
 }
 body {
   display: flex;
@@ -21,7 +24,7 @@ body {
   overflow: hidden;
 }
 .weather-details {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .temperature {
   font-weight: 400;
@@ -47,7 +50,7 @@ span.time {
   font-weight: 600;
 }
 .city-details {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 .city-details .city-name {
   margin-bottom: 0;
@@ -84,7 +87,7 @@ span.time {
 
 .weekday-details .weekday {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .weekday-details img {
   padding: 10px 0;
@@ -142,7 +145,7 @@ span.time {
 
 .today-details .sunrise span,
 .today-details .sunset span {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .wind-details .card-data sub {
@@ -251,7 +254,7 @@ span.time {
   body {
     margin: 15px 15px 45px 15px;
   }
-  
+
   .content-wrapper-right {
     padding: 25px;
     text-align: center;
@@ -285,23 +288,20 @@ span.time {
     padding: 10px 0;
     border-radius: 10px;
   }
-  .content-wrapper-left .row:nth-child(3) img { 
+  .content-wrapper-left .row:nth-child(3) img {
     background-color: #fff;
     border-radius: 50%;
   }
-  .content-wrapper-left .row:nth-child(3)  p {
+  .content-wrapper-left .row:nth-child(3) p {
     margin-bottom: 0;
   }
   .main_temp_img {
     background-color: rgb(241 241 241);
     border-radius: 50%;
-}
-  .weather-details {
-    margin-bottom: 1rem;
-}
-.city-details {
-  margin-top: 0;
-}
+  }
+  .city-details {
+    margin-top: 0;
+  }
   .content-wrapper-right .row {
     display: flex;
     flex-wrap: nowrap;
