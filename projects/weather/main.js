@@ -83,7 +83,7 @@ const getWeather = (latitude, longitude) => {
                         <div class="temp-details"><span class="high">${high}°</span> <span class="low">${low}°</span></div>
                     </div>
                 </div>`;
-          weekForecastElement[0].insertAdjacentHTML("afterbegin", fday);
+          weekForecastElement[0].insertAdjacentHTML("beforeend", fday);
           //    console.log(weekForecastElement);
 
           // Showding data to client
@@ -113,8 +113,8 @@ const getWeather = (latitude, longitude) => {
             weather.current.sunset * 1000
           ).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
           // console.log(weather.current.sunrise.getHours());
-          sunriseElement.innerHTML = `<img src="icons/sunrise.svg" alt="sunrise" width="30"><span class="align-middle">${sunrise}</span>`;
-          sunsetElement.innerHTML = `<img src="icons/sunset.svg" alt="sunrise" width="30"><span class="align-middle">${sunset}</span>`;
+          sunriseElement.innerHTML = `<img src="icons/sunrise.svg" alt="sunrise" width="28"><span class="align-middle">${sunrise}</span>`;
+          sunsetElement.innerHTML = `<img src="icons/sunset.svg" alt="sunrise" width="28"><span class="align-middle">${sunset}</span>`;
           humidityElement.innerHTML = `${weather.current.humidity} <sup>%</sup>`;
 
           // Checking humidity Level

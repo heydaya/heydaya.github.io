@@ -41,31 +41,53 @@
               </button>
             </div>
           </form>
-          <img
-            src="icons/01d.svg"
-            alt="sun"
-            class="main_temp_img img-fluid"
-            width="200"
-          />
-          <div class="weather-details">
-            <p class="display-2 temperature">00<sup>°C</sup></p>
-            <p class="day-info">
-              <span class="day">Day</span>, <span class="time">00:00 AM</span>
-            </p>
+          <div class="row">
+            <div class="col-4 col-sm-12">
+              <img
+              src="icons/01d.svg"
+              alt="sun"
+              class="main_temp_img img-fluid"
+              width="200"
+            />
+            </div>
+            <div class="col-8 col-sm-12">
+              <div class="weather-details">
+                <p class="display-2 temperature">00<sup>°C</sup></p>
+                <p class="day-info">
+                  <span class="day">Day</span>, <span class="time">00:00 AM</span>
+                </p>
+              </div>
+            </div>
           </div>
-          <p class="description">
-            <img src="icons/04d.svg" alt="overcast" width="30" />
-            <span class="align-middle">Description</span>
-          </p>
-          <p class="rain">
-            <img src="icons/wind.svg" alt="wind" width="30" />
-            <span class="align-middle">Wind - 00°</span>
-          </p>
+          <div class="row">
+            <div class="col-6 col-sm-12">
+              <p class="description">
+                <img src="icons/04d.svg" alt="overcast" width="30" />
+                <span class="align-middle">Description</span>
+              </p>
+            </div>
+            <div class="col-6 col-sm-12">
+              <p class="rain">
+                <img src="icons/wind.svg" alt="wind" width="30" />
+                <span class="align-middle">Wind - 00°</span>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="city-details">
+                <p class="city-name">City</p>
+                <p class="country-name">Country</p>
+              </div>
+            </div>
+            <!-- <div class="col"></div> -->
+          </div>
+         
+          
+         
+          
 
-          <div class="city-details">
-            <p class="city-name">City</p>
-            <p class="country-name">Country</p>
-          </div>
+          
         </div>
         <div class="col-md-9 content-wrapper-right">
           <div class="container gx-0">
@@ -137,7 +159,7 @@
             </div>
 
             <h5 class="section-heading">Today's Highlights</h5>
-            <div class="row gx-3 mb-3">
+            <div class="row gx-2 mb-2">
               <div class="col">
                 <div class="uv-details card-details">
                   <h5 class="card-heading">UV Index</h5>
@@ -158,11 +180,11 @@
                     <img
                       src="icons/sunrise.svg"
                       alt="sunrise"
-                      width="30"
+                      width="28"
                     /><span class="align-middle">0.00 AM</span>
                   </p>
                   <p class="sunset">
-                    <img src="icons/sunset.svg" alt="sunset" width="30" /><span
+                    <img src="icons/sunset.svg" alt="sunset" width="28" /><span
                       class="align-middle"
                       >0.00 PM</span
                     >
@@ -170,7 +192,7 @@
                 </div>
               </div>
             </div>
-            <div class="row gx-3">
+            <div class="row gx-2">
               <div class="col">
                 <div class="humidity-details card-details">
                   <h5 class="card-heading">Humidity</h5>
