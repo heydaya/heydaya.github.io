@@ -18,11 +18,15 @@ let steps = 50;
 cardsElement.forEach((card) => card.addEventListener("click", flipCard));
 
 function flipCard() {
+  
   if (lockBoard) return; // Locking the game board until mismatch cards is flipped back
   this.classList.add("flipped");
   if (this === firstCard) return; // Avoid double click
 
   // if (steps === 0) return;
+
+  // Steps Counter
+    stepsCheck();
 
   // First Card
   if (!hasCardFlipped) {
@@ -33,9 +37,6 @@ function flipCard() {
     secondCard = this;
     checkCards();
 
-    // Steps Counter
-
-    stepsCheck();
   }
 }
 
