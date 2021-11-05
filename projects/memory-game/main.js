@@ -13,7 +13,7 @@ let hasCardFlipped = false;
 let lockBoard = false;
 let firstCard, secondCard;
 let score = 0;
-let steps = 50;
+let steps = 60;
 
 cardsElement.forEach((card) => card.addEventListener("click", flipCard));
 
@@ -129,11 +129,11 @@ replayButtonElement.forEach((button)=> {
       card.classList.remove("flipped");
     });
     shuffleCard();
-    [score, steps] = [0, 50];
+    [score, steps] = [0, 60];
     console.log(steps);
   
     gameScoreElement.innerHTML = 0;
-    gameStepsElement.innerHTML = 50;
+    gameStepsElement.innerHTML = 60;
   
     cardsElement.forEach((card) => card.addEventListener("click", flipCard));
   });
