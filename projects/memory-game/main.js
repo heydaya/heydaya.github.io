@@ -141,11 +141,29 @@ replayButtonElement.forEach((button)=> {
 
 
 // Progressive Web App JS
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
-    navigator.serviceWorker
-      .register("serviceWorker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log("service worker not registered", err));
-  });
-}
+// if ("serviceWorker" in navigator) {
+//   window.addEventListener("load", function() {
+//     navigator.serviceWorker
+//       .register("serviceWorker.js")
+//       .then(res => console.log("service worker registered"))
+//       .catch(err => console.log("service worker not registered", err));
+//   });
+// }
+
+window.addEventListener('load', () => {
+      registerSW();
+    });
+ 
+    // Register the Service Worker
+    async function registerSW() {
+      if ('serviceWorker' in navigator) {
+        try {
+          await navigator
+                .serviceWorker
+                .register('serviceworker.js');
+        }
+        catch (e) {
+          console.log('SW registration failed');
+        }
+      }
+    }

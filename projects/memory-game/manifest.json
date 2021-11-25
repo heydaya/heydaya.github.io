@@ -6,6 +6,8 @@
   "background_color": "#fdfdfd",
   "theme_color": "#15871a",
   "orientation": "portrait-primary",
+  "scope": ".",
+  "description":"Emoji Matching Game",
   "icons": [
     {
       "src": "images/logo/icon-72x72.png",
